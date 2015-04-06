@@ -1,0 +1,16 @@
+#wc-autoship-authorize-net-cc-fields {
+	border-bottom: 1px solid #cccccc;
+}
+
+.wc-autoship-payment-method-description .authorize-net-description {
+	margin-bottom: 20px;
+}
+
+.wc-autoship-payment-method-description .authorize-net-description img {
+	display: inline-block;
+	margin: 10px;
+}
+
+.wc-autoship-payment-field.cc-cvv {
+	width: 100px;
+}

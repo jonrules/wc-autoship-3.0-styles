@@ -1,0 +1,24 @@
+.wc-autoship-container {
+	@import "bootstrap";
+	@import "all";
+	@media (max-width: $screen-xs-max) {
+		@import "xs_max";
+	}
+	@media (min-width: $screen-sm-min) {
+		@import "sm_min";
+	}
+	@media (max-width: $screen-sm-max) {
+		@import "sm_max";
+	}
+	@media (min-width: $screen-md-min) {
+		@import "md_min";
+	}
+	@media (max-width: $screen-md-max) {
+		@import "md_max";
+	}
+	@media (min-width: $screen-lg-min) {
+		@import "lg_min";
+	}
+}
+@import "bootstrap/variables";
+@import "bootstrap/glyphicons-font-face";
