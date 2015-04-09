@@ -1268,35 +1268,40 @@ var AUTOSHIP_BILLING = {"customer_id":"2","ajax_url":"http:\/\/autoship1.pattern
 		<div class="content_wrapper">
 			
 <div class="wc-autoship-container">
-
-	<!-- Breadcrumbs -->
-	<ol class="breadcrumb">
-		<li><a href="http://autoship1.patternsinthecloud.com/?page_id=7">My Autoship</a></li>
-		<li><a href="./autoship-billing_files/autoship-billing.html" class="active">Autoship Billing</a></li>
+                                    <div class="row">
+                                    <!-- card section -->
+                                    <section class="card col-xs-12 col-md-8 col-md-offset-2">
+                                        	<!-- Breadcrumbs -->
+	<ol class="breadcrumb text-center">
+		<li><a href="http://autoship1.patternsinthecloud.com/?page_id=7">Menu</a></li>
+        		<li class="active"><a href="http://autoship1.patternsinthecloud.com/?page_id=7">Autoship Billing</a></li>
+        
 	</ol>
 	
 	<hr>
 	
 		
-	<h2>Current Billing</h2>
-	
-	<div class="wc-autoship-current-billing">
-		<p class="wc-autoship-billing-address">
-			Test Testerson<br>
-			123 Test St Apt 1<br>
-			Austin, TX 78704<br>
-			US<br>
-			<a class="wc-autoship-edit-billing-address-link" href="http://autoship1.patternsinthecloud.com/?page_id=7edit-address/billing/">Edit billing address</a>
-		</p>
-		<div class="wc-autoship-current-payment-method">
-			<strong>Current payment method:</strong><br>
+<h3>Current Payment and Address<br><small>Review and make changes to payment information used for future Autoship orders.</small></h3>
+                                        
+	           <div class="col-xs-12 col-sm-5">
+        		<div class="well well-card wc-autoship-current-payment-method ">
+			<strong>Current Payment Method:</strong><br>
 										<div class="wc-autoship-payment-method-description">
-					<div class="paypal-description"><img src="./autoship-billing_files/pp_cc_mark_37x23.jpg" alt="PayPal"><br> <span>test@patternsinthecloud.com</span></div>				</div>
+					<div class="paypal-description"><img src="./autoship-billing_files/pp_cc_mark_37x23.jpg" alt="PayPal"><br> <span>test@patternsinthecloud.com</span>
+                        
+                                            </div>				
+                    
+                    </div>
+                
 					</div>
-	</div>
-	
-	<h3>Update Payment Method</h3>
-	
+                <a class="btn btn-primary btn-sm" data-toggle="collapse" href="#payment-update" aria-expanded="false" aria-controls="payment-update">Edit Payment Method</a>
+                </div>
+        <!-- payment-update -->                                
+        <div class="collapse col-xs-12 col-sm-7" id="payment-update">
+        
+
+    <div class="well well-card" >
+    <strong>Edit Payment Method:</strong>
 	<form method="post" action="http://autoship1.patternsinthecloud.com/wp-admin/admin-ajax.php?action=customer_action_submit_payment_method">
 		<div style="display: none">
 			<input type="hidden" name="customer_id" value="2">
@@ -1317,14 +1322,16 @@ var AUTOSHIP_BILLING = {"customer_id":"2","ajax_url":"http:\/\/autoship1.pattern
 										<label for="payment_method_wc_autoship_authorize_net">Credit Card </label>
 										<div class="payment_box payment_method_wc_autoship_authorize_net" style="display: none;"><div id="wc-autoship-authorize-net-fields">
 	<div id="wc-autoship-authorize-net-cc-fields">
-		<div class="wc-autoship-payment-field cc-number">
+		<div class="wc-autoship-payment-field cc-number form-group">
 			<label for="wc-autoship-authorize-net-cc-number">Credit Card Number</label>
-			<input type="text" id="wc-autoship-authorize-net-cc-number" name="cc_number" autocomplete="off">
+			<input type="text" id="wc-autoship-authorize-net-cc-number" name="cc_number" autocomplete="off" class="form-control">
 		</div>
-		<div class="wc-autoship-payment-field cc-expiration-month">
-			<label for="wc-autoship-authorize-net-cc-expiration-month">Expiration Month</label>
-			<select id="wc-autoship-authorize-net-cc-expiration-month" name="cc_expiration_month">
-				<option value="" selected="selected">--SELECT--</option>
+        <div class="row">
+            <label for="wc-autoship-authorize-net-cc-expiration-month" class="col-xs-12">Expiration</label>
+		<div class="wc-autoship-payment-field cc-expiration-month form-group col-xs-12 col-sm-6">
+			
+			<select id="wc-autoship-authorize-net-cc-expiration-month" name="cc_expiration_month" class="form-control">
+				<option value="" selected="selected"> MONTH</option>
 				<option value="01">01 - January</option>
 				<option value="02">02 - February</option>
 				<option value="03">03 - March</option>
@@ -1339,10 +1346,11 @@ var AUTOSHIP_BILLING = {"customer_id":"2","ajax_url":"http:\/\/autoship1.pattern
 				<option value="12">12 - December</option>
 			</select>
 		</div>
-		<div class="wc-autoship-payment-field cc-expiration-year">
-			<label for="wc-autoship-authorize-net-cc-expiration-year">Expiration Year</label>
-			<select id="wc-autoship-authorize-net-cc-expiration-year" name="cc_expiration_year">
-				<option value="" selected="selected">--SELECT--</option>
+        
+		<div class="wc-autoship-payment-field cc-expiration-year form-group col-xs-12 col-sm-6">
+			<!--<label for="wc-autoship-authorize-net-cc-expiration-year">Expiration Year</label>-->
+			<select id="wc-autoship-authorize-net-cc-expiration-year" name="cc_expiration_year" class="form-control">
+				<option value="" selected="selected"> YEAR</option>
 									<option value="2015">2015</option>
 									<option value="2016">2016</option>
 									<option value="2017">2017</option>
@@ -1365,11 +1373,12 @@ var AUTOSHIP_BILLING = {"customer_id":"2","ajax_url":"http:\/\/autoship1.pattern
 									<option value="2034">2034</option>
 							</select>
 		</div>
-		<div class="wc-autoship-payment-field cc-cvv">
+        </div>
+		<div class="wc-autoship-payment-field cc-cvv form-group">
 			<label for="wc-autoship-authorize-net-cc-cvv">
 				CVV
 			</label>
-			<input type="text" id="wc-autoship-authorize-net-cc-cvv" name="cc_cvv" autocomplete="off">
+			<input type="text" id="wc-autoship-authorize-net-cc-cvv" name="cc_cvv" autocomplete="off" class="form-control">
 		</div>
 	</div>
 </div></div>									</li>
@@ -1378,12 +1387,42 @@ var AUTOSHIP_BILLING = {"customer_id":"2","ajax_url":"http:\/\/autoship1.pattern
 			</div>
 		</div>
 		<p>
-			<button type="submit" id="wc-autoship-update-payment-method-btn" class="wc-autoship-update-payment-method-btn btn btn-primary">Update payment method</button>
+			<button type="submit" id="wc-autoship-update-payment-method-btn" class="wc-autoship-update-payment-method-btn btn btn-primary" data-toggle="collapse" href="#payment-update" aria-expanded="false" aria-controls="payment-update">Update Payment Method</button>
 		</p>
 	</form>
+        </div>
+    </div>
+                                        <!-- end payment-update -->
+                                        
+                                        
+        <div class="clearfix gutter-card"></div>
+                                        
+                                        
+                                        
+        <div class="col-xs-12">                           
+        <div class="well well-card wc-autoship-current-billing">
+        <strong>Current Billing Address:</strong><br>
+		<p class="wc-autoship-billing-address">
+			Test Testerson<br>
+			123 Test St Apt 1<br>
+			Austin, TX 78704<br>
+			US<br>
+		</p>
+        </div>
+            <a class="wc-autoship-edit-billing-address-link btn btn-primary btn-sm" href="http://autoship1.patternsinthecloud.com/?page_id=7edit-address/billing/">Edit Billing Address</a>
+        </div>
+
+	                      
+    
+
 	
+        
+                                        
+                                          </section>
+	</div>
+
 </div>
-            <div class="clr"></div>
+<!-- end autoship container -->            <div class="clr"></div>
                                 </div>
 	</div><!-- .entry-content -->
     

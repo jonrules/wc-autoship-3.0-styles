@@ -1,107 +1,107 @@
 $card-bg: #fcfcfc;
 $card-body-bg: #ffffff;
- 
-.alert {
-
-}
+.alert {}
 
 .wc-autoship-number {
-	display:block;
-	height: 30px;
-	width: 30px;
-	background-color: #ffffff;
-	border-radius: 50%;
-	color: forestgreen;
-	margin-left:3px;
+    display: block;
+    height: 40px;
+    width: 40px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    color: forestgreen;
+    margin-left: 10px;
+    float:left;
+}
+
+.wc-autoship-menu-icon {
+    display: block;
+    margin-left: 10px;
+    float:left;
 }
 
 .wc-autoship-menu {
-	.breadcrumb {
-	}
+    .breadcrumb {}
 }
 
 .wc-autoship-nav {
-	ul {
-		li {
-			background-color: #FFFFFF;
-			a {
-				height: 200px;
-				background-color: #FFFFFF;
-			}
-		}
-	}
+    ul {
+        li {
+            background-color: #FFFFFF;
+            a {
+                height: 200px;
+                background-color: #FFFFFF;
+            }
+        }
+    }
+}
+
+.card-default {
+    border-left: 2px solid #bfbfbf;
 }
 
 .card {
-	border-left: 2px solid #bfbfbf;
-	margin-top: 20px;
-	padding: 20px 0 0 0;
-	background-color: $card-bg;
-	-moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.16);
-	-webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.16);
-	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
-	
-	.card-header {
-		.card-title-text {
-			font-size: 1.75rem;
-		}
-	}
-	.card-body {
-		padding: 0;
-		background-color: $card-body-bg;
-	}
-	.card-footer {
-		font-size: 1.5rem;
-	}
-	
-	.menu {
-		margin-top: 20px;
-		padding: 40px 0px 20px 0px;
-		.row {
-			margin-bottom: 15px;
-		}
-	}
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: $card-bg;
+    -moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+    .breadcrumb {
+        li {
+        font-size: 1.25rem;
+        }
+    }
+    .card-body {
+        padding: 0;
+        background-color: $card-body-bg;
+    }
+    .card-footer {
+        font-size: 1.5rem;
+    }
+    .menu {
+        margin-top: 20px;
+        padding: 40px 0px 20px 0px;
+        .row {
+            margin-bottom: 15px;
+        }
+    }
 }
 
-.wc-autoship-schedule {	
-	.row {
-		margin-bottom: 15px;
-	}
-	
-	.wc-autoship-schedule-item-quantity-input {
-		width: 70px;
-		text-align: right;
-	}
-	
-	.total-col {
-		text-align: right;
-	}
+.wc-autoship-schedule {
+    .row {
+        margin-bottom: 15px;
+    }
+    .wc-autoship-schedule-item-quantity-input {
+        width: 70px;
+        text-align: right;
+    }
+    .total-col {
+        text-align: right;
+    }
 }
 
 .wc-autoship-schedule.loading {
-	@include opacity(.7);
+    @include opacity(.7);
 }
 
 .btn-xl {
-	height: auto;
-	padding: 15px 5px 0px;
-	font-size: 2rem;
-	i {
-		font-size: 2.75rem;
-	}
-}
-
-.title {
-	color: #555;
-	font-size: 18px;
-	font-weight: 400;
-	display: block;
-	margin-bottom: 20px;
+    height: auto;
+    padding: 15px 5px 10px 0px;
+    font-size: 2rem;
+    line-height: 2.75rem;
+    i {
+        font-size: 2.75rem;
+    }
 }
 
 .wc-autoship-menu {
-	margin: 10px 0 20px 0;
-	.wc-autoship-menu-link {
-		margin: 5px;
-	}
+    margin: 0 0 20px 0;
+    .wc-autoship-menu-link {
+        margin: 10px 5px;
+    }
+}
+
+.gutter-card {
+    margin: 20px 0;
 }

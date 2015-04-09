@@ -2,12 +2,11 @@
 // Breadcrumbs
 // --------------------------------------------------
 
-
 .breadcrumb {
   padding: $breadcrumb-padding-vertical $breadcrumb-padding-horizontal;
   margin-bottom: $line-height-computed;
   list-style: none;
-  background-color: $breadcrumb-bg;
+  /*background-color: $breadcrumb-bg;*/
   border-radius: $border-radius-base;
 
   > li {
@@ -22,5 +21,8 @@
 
   > .active {
     color: $breadcrumb-active-color;
+     a {
+         color: $breadcrumb-active-color;
+     }
   }
 }
