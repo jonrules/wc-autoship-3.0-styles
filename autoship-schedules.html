@@ -1267,17 +1267,176 @@ var AUTOSHIP_BILLING = {"customer_id":"2","ajax_url":"http:\/\/autoship1.pattern
     <div class="entry-content">
 		<div class="content_wrapper">
 			<div class="wc-autoship-container">
-
-	<!-- Breadcrumbs -->
-	<ol class="breadcrumb">
-		<li><a href="http://autoship1.patternsinthecloud.com/?page_id=7">My Autoship</a></li>
-		<li><a href="./autoship-schedules_files/autoship-schedules.html" class="active">Autoship Schedules</a></li>
+                <div class="row">
+<!-- card section -->
+                                    <section class="card col-xs-12 col-md-8 col-md-offset-2">
+                                        	<!-- Breadcrumbs -->
+	<ol class="breadcrumb text-center">
+		<li><a href="http://autoship1.patternsinthecloud.com/?page_id=7">Menu</a></li>
+        		<li class="active"><a href="./autoship-schedules_files/autoship-schedules.html">Autoship Schedules</a></li>
+        
 	</ol>
-	
-	<hr>
+                                        <hr>
 	
 	<div class="wc-autoship-schedules-row row">
 		<div class="wc-autoship-schedules-col col-xs-12 col-md-8 col-md-offset-2">
+
+<!-- panel test -->
+            
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      
+          <div class="col-xs-2">
+														<button id="wc-autoship-schedule-autoship-status-btn-1" class="wc-autoship-schedule-autoship-status-btn btn btn-success" type="button" data-loading-text="..." data-schedule-id="1" data-autoship-status="1">
+								<span class="glyphicon glyphicon-pause"></span>
+							</button>
+						</div>
+          
+        
+            <div class="col-xs-10">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <span class="card-title-summary">(2) Items Ship Every 28 Days</span>
+                <br><span class="card-title-text">Next Shipment: May 4, 2015</span>
+                    </a>
+</div>
+        
+              
+      
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body no-margin-bottom">
+                    <div class="row text-center">
+						<strong>
+							Change Next Ship Date
+						</strong>
+                    </div>
+                    <div class="clearfix gutter-5"></div>
+                    <div class="row">
+
+						<div class="col-xs-8 col-xs-offset-2">
+							<div class="form-group">
+								<div class="input-group date">
+									<input type="text" data-min="2015-04-07" data-schedule-id="1" id="wc-autoship-schedule-next-order-date-input-1" class="wc-autoship-schedule-next-order-date-input form-control hasDatepicker" value="2015-05-04">
+									<span class="input-group-addon">
+										<span class="glyphicon glyphicon-calendar"></span>
+									</span>
+								</div>
+							</div>
+						</div>
+                    
+					</div>
+          <div class="row no-margin-bottom">
+              <table class="wc-autoship-schedule-items-table table table-responsive no-margin-bottom">
+							<thead>
+								<tr>
+									<th></th>
+									<th>Item</th>
+									<th>Qty</th>
+									<th>Total</th>
+								</tr>
+							</thead>
+							<tfoot class="wc-autoship-schedule-item-totals">
+																<tr>
+									<th colspan="3">Subtotal:</th>
+									<td class="total-col"><span class="amount">$159.98</span></td>
+								</tr>
+																																<tr>
+									<th colspan="3">Shipping:</th>
+									<td class="total-col"><span class="amount">$6.50</span></td>
+								</tr>
+																									<tr>
+										<th colspan="3">Tax:</th>
+										<td class="total-col"><span class="amount">$12.80</span></td>
+									</tr>
+																								<tr>
+									<th colspan="3">Total:</th>
+									<td class="total-col"><span class="amount"><strong>$179.28</strong></span></td>
+								</tr>
+							</tfoot>
+							<tbody id="wc-autoship-schedule-items-1" class="wc-autoship-schedule-items">
+																										<tr>
+										<th>
+											<button id="wc-autoship-schedule-item-delete-btn-1" class="wc-autoship-schedule-item-delete-btn btn btn-default" data-loading-text="..." data-schedule-id="1" data-schedule-item-id="1">
+												<span class="glyphicon glyphicon-remove"></span>
+											</button>
+										</th>
+										<td>
+											<div class="wc-autoship-schedule-item-title">Developer’s Must Have Gray Cardigan</div>
+																					</td>
+										<td><input type="number" min="1" class="wc-autoship-schedule-item-quantity-input form-control input-sm" placeholder="1" value="2" data-schedule-id="1" data-schedule-item-id="1"></td>
+										<td class="total-col">
+																																		<span class="amount">$79.99</span>																				</td></tr>
+															</tbody>
+							<tbody id="wc-autoship-schedule-item-add-1" class="wc-autoship-schedule-item-add">
+								<tr>
+									<th>
+										<button class="wc-autoship-schedule-item-add-btn btn btn-default" data-target="#wc-autoship-schedule-item-add-input-1" data-loading-text="...">
+											<span class="glyphicon glyphicon-plus"></span>
+										</button>
+									</th>
+									<td colspan="3">
+										<select id="wc-autoship-schedule-item-add-input-1" class="wc-autoship-schedule-item-add-input form-control" data-schedule-id="1">
+											<option value="">+ Add Item</option>
+											<option value="{&quot;price&quot;:&quot;79.99&quot;,&quot;display_price&quot;:&quot;$79.99&quot;,&quot;product_id&quot;:1543,&quot;title&quot;:&quot;Developer\u2019s Must Have Gray Cardigan&quot;}">Developer’s Must Have Gray Cardigan ($79.99)</option>										</select>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+          
+          </div>
+      </div>
+        <div class="panel-footer text-center">            <button id="wc-autoship-schedule-delete-btn-1&quot;" class="wc-autoship-schedule-delete-btn btn btn-sm btn-danger" type="button" title="Delete this schedule" data-loading-text="..." data-schedule-id="1">
+					<span class="glyphicon glyphicon-trash"></span><span class="wc-autoship-delete-text"> Delete Schedule</span>
+				</button></div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Collapsible Group Item #2
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Collapsible Group Item #3
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+<!-- end panels -->
+            
+            
+            
+            
+            
+            
 			
 							
 <section id="wc-autoship-schedule-1" class="wc-autoship-schedule">
@@ -1549,7 +1708,8 @@ var AUTOSHIP_BILLING = {"customer_id":"2","ajax_url":"http:\/\/autoship1.pattern
 		</div>
 	
 	</div>
-	
+                </section>
+                    </div>
 </div>
             <div class="clr"></div>
                                 </div>

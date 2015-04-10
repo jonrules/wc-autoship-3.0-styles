@@ -1279,13 +1279,10 @@ var AUTOSHIP_BILLING = {"customer_id":"2","ajax_url":"http:\/\/autoship1.pattern
 	</ol>
 	
 	<hr>
-	
-		
-<h3>Current Payment and Address<br><small>Review and make changes to payment information used for future Autoship orders.</small></h3>
                                         
-	           <div class="col-xs-12 col-sm-5">
-        		<div class="well well-card wc-autoship-current-payment-method ">
-			<strong>Current Payment Method:</strong><br>
+	           <div class="col-xs-12 col-sm-6">
+        		<div class="well well-card wc-autoship-current-payment-method">
+			<h4>Payment Method</h4>
 										<div class="wc-autoship-payment-method-description">
 					<div class="paypal-description"><img src="./autoship-billing_files/pp_cc_mark_37x23.jpg" alt="PayPal"><br> <span>test@patternsinthecloud.com</span>
                         
@@ -1294,14 +1291,14 @@ var AUTOSHIP_BILLING = {"customer_id":"2","ajax_url":"http:\/\/autoship1.pattern
                     </div>
                 
 					</div>
-                <a class="btn btn-primary btn-sm" data-toggle="collapse" href="#payment-update" aria-expanded="false" aria-controls="payment-update">Edit Payment Method</a>
+                <a class="btn btn-primary btn-sm center-block" data-toggle="collapse" href="#payment-update" aria-expanded="false" aria-controls="payment-update">Edit Payment Method</a>
                 </div>
         <!-- payment-update -->                                
-        <div class="collapse col-xs-12 col-sm-7" id="payment-update">
+        <div class="collapse col-xs-12 col-sm-6" id="payment-update">
         
 
     <div class="well well-card" >
-    <strong>Edit Payment Method:</strong>
+    <h4>Edit Payment Method</h4>
 	<form method="post" action="http://autoship1.patternsinthecloud.com/wp-admin/admin-ajax.php?action=customer_action_submit_payment_method">
 		<div style="display: none">
 			<input type="hidden" name="customer_id" value="2">
@@ -1387,21 +1384,22 @@ var AUTOSHIP_BILLING = {"customer_id":"2","ajax_url":"http:\/\/autoship1.pattern
 			</div>
 		</div>
 		<p>
-			<button type="submit" id="wc-autoship-update-payment-method-btn" class="wc-autoship-update-payment-method-btn btn btn-primary" data-toggle="collapse" href="#payment-update" aria-expanded="false" aria-controls="payment-update">Update Payment Method</button>
+			<button type="submit" id="wc-autoship-update-payment-method-btn" class="wc-autoship-update-payment-method-btn btn btn-danger btn-lg " data-toggle="collapse" href="#payment-update" aria-expanded="false" aria-controls="payment-update">Save Changes</button>
 		</p>
 	</form>
         </div>
+            <div class="clearfix gutter-card"></div>
     </div>
                                         <!-- end payment-update -->
                                         
                                         
-        <div class="clearfix gutter-card"></div>
+        
                                         
                                         
                                         
-        <div class="col-xs-12">                           
+        <div class="col-xs-12 col-sm-6">                           
         <div class="well well-card wc-autoship-current-billing">
-        <strong>Current Billing Address:</strong><br>
+        <h4>Billing Address</h4>
 		<p class="wc-autoship-billing-address">
 			Test Testerson<br>
 			123 Test St Apt 1<br>
@@ -1409,7 +1407,7 @@ var AUTOSHIP_BILLING = {"customer_id":"2","ajax_url":"http:\/\/autoship1.pattern
 			US<br>
 		</p>
         </div>
-            <a class="wc-autoship-edit-billing-address-link btn btn-primary btn-sm" href="http://autoship1.patternsinthecloud.com/?page_id=7edit-address/billing/">Edit Billing Address</a>
+            <a class="wc-autoship-edit-billing-address-link btn btn-primary btn-sm center-block" href="http://autoship1.patternsinthecloud.com/?page_id=7edit-address/billing/">Edit Billing Address</a>
         </div>
 
 	                      
