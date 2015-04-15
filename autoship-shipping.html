@@ -1269,28 +1269,37 @@ var AUTOSHIP_BILLING = {"customer_id":"2","ajax_url":"http:\/\/autoship1.pattern
 			
 <div class="wc-autoship-container">
 
-	<!-- Breadcrumbs -->
-	<ol class="breadcrumb">
-		<li><a href="http://autoship1.patternsinthecloud.com/?page_id=7">My Autoship</a></li>
-		<li><a href="./autoship-shipping_files/autoship-shipping.html" class="active">Autoship Shipping</a></li>
+    
+                                    <div class="row">
+                                    <!-- card section -->
+                                    <section class="card col-xs-12 col-md-8 col-md-offset-2">
+                                        	<!-- Breadcrumbs -->
+	<ol class="breadcrumb text-center">
+		<li><a href="http://autoship1.patternsinthecloud.com/?page_id=7">Menu</a></li>
+		<li class="active"><a href="./autoship-shipping_files/autoship-shipping.html" >Shipping &amp; Delivery</a></li>
+        
 	</ol>
 	
 	<hr>
 	
-		
-	<h2>Current Shipping</h2>
+	<div class="col-xs-12 col-sm-6">
+        		<div class="well well-card wc-autoship-current-shipping">	
+	<h4>Shipping Address</h4>
 	
-	<div class="wc-autoship-current-shipping">
+	
 		<p class="wc-autoship-shipping-address">
 			Test Testerson<br>
 			123 Test St Apt 1<br>
 			Austin, TX 78704<br>
-			US<br>
-			<a class="wc-autoship-edit-shipping-address-link" href="http://autoship1.patternsinthecloud.com/?page_id=7edit-address/shipping/">Edit shipping address</a>
+			US
 		</p>
-	</div>
+        </div>
+                                        <a class="wc-autoship-edit-shipping-address-link btn btn-primary btn-sm center-block" href="http://autoship1.patternsinthecloud.com/?page_id=7edit-address/shipping/">Edit Shipping Address</a>
+                                        </div>
 	
-	<h3>Update Shipping Method</h3>
+    	<div class="col-xs-12 col-sm-6">
+        		<div class="well well-card wc-autoship-current-shipping">
+	<h4>Shipping Method</h4>
 
 	<form method="post" action="http://autoship1.patternsinthecloud.com/wp-admin/admin-ajax.php?action=customer_action_submit_shipping_method">
 		<div style="display: none">
@@ -1306,15 +1315,16 @@ var AUTOSHIP_BILLING = {"customer_id":"2","ajax_url":"http:\/\/autoship1.pattern
 					<input type="radio" id="wc-autoship-customer-shipping-method-input-free_shipping" class="wc-autoship-customer-shipping-method-input" name="shipping_method" checked="checked" value="free_shipping"> 
 					&nbsp;Free Shipping				</label>
 			</div>
-				<p>
-			<button type="submit" id="wc-autoship-update-shipping-method-btn" class="wc-autoship-update-shipping-method-btn btn btn-primary">Update shipping method</button>
-		</p>
 	</form>
-</div>
-            <div class="clr"></div>
+            </div>
+            <button type="submit" id="wc-autoship-update-shipping-method-btn" class="wc-autoship-update-shipping-method-btn btn btn-primary btn-sm center-block">Update shipping method</button>
+                                        </div>
+
+</section></div>
+           
                                 </div>
 	</div><!-- .entry-content -->
-    
+    </div>   
 </article><!-- #post-7834 -->
 
 
